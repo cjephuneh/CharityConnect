@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary: black; /* Background primary color */
+    --primary-foreground: white; /* Text primary foreground color */
+    --bg-primary-5: rgba(245, 245, 245, 0.5); /* Changed slash to hyphen and defined as rgba */
+    --bg-gradient: linear-gradient(to bottom, var(--primary), var(--primary-foreground)); /* Added gradient definition */
+}
+
+/* Example usage */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary-foreground {
+    color: var(--primary-foreground);
+}

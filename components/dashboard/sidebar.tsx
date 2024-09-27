@@ -33,7 +33,7 @@ function Sidebar({ className }: SidebarProps) {
             <Button
               key={item.name}
               variant={activeItem === item.name.toLowerCase() ? "secondary" : "ghost"}
-              className="justify-start"
+              className={`justify-start ${activeItem === item.name.toLowerCase() ? "bg-gray-200" : "hover:bg-gray-200"}`} // Set background for selected item
               onClick={() => setActiveItem(item.name.toLowerCase())}
             >
               <item.icon className="mr-2 h-4 w-4" />
